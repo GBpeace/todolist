@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgba(20, 20, 47, 0.978);
+    color: white;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #6b7280;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: rgba(10, 10, 10, 0.953);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.25rem;
+}
+
+#new-task-submit {
+    color: rgb(178, 8, 96);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list {
+    padding: 1rem;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #6b7280;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(10, 10, 10, 0.953);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem; 
+}
+
+#tasks .task .content .text{
+    color:white;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+#tasks .task .content .text:not(:read-only){
+    color:rgb(178, 8, 96);
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+} 
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.task .actions .edit{
+    color:rgb(178, 8, 96); 
+}
+
+.task .actions .delete{
+    color:crimson; 
+}
